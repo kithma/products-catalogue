@@ -17,7 +17,6 @@ const Process = () => {
 	return <FlexContainer maxWidth="1220px" flexDirection="column">
 		<StyledText
 			fontSize="18px"
-			color={theme.colors.colorBlack}
 			fontWeight="400"
 			margin="20px 0 10px 0"
 		>

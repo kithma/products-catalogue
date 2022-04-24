@@ -30,7 +30,6 @@ const ProductRow = observer(({ product }: Props) => {
 				<FlexContainer gap="20px" flexDirection="column" maxWidth="70%">
 					<StyledText
 						fontSize="14px"
-						color={theme.colors.colorBlack}
 						fontWeight="500"
 					>
 						{product.productName}

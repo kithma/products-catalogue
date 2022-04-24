@@ -9,7 +9,6 @@ import ProductRow from "./Product/ProductRow";
 import ProductDetails from "./Product/ProductDetails";
 import { observer } from "mobx-react";
 import StyledText from "../../shared/StyledText";
-import { theme } from "../../../theme/Theme";
 
 const ProductOptions = [
 	Category.SoftwareDevelopment,
@@ -69,7 +68,6 @@ const Products = observer(() => {
 				<StyledText
 					fontSize="16px"
 					fontWeight="500"
-					color={theme.colors.colorBlack}
 					margin="10px 20px"
 				>
 					I'm looking for...
@@ -86,6 +84,16 @@ const Products = observer(() => {
 				</FlexContainer>
 				<SearchInput onChange={onSearch} />
 			</StyledOptionContainer>
+
+			{products.length === 0 && (searchTerm || selectedCategories.length > 0) &&
+				<StyledText
+					fontSize="14px"
+					fontWeight="500"
+					margin="40px 20px"
+				>
+					No products found for given criteria
+				</StyledText>}
+
 			<FlexContainer flexDirection="column" gap="30px" margin="20px 0">
 				{products.map(product => {
 					return <ProductRow key={product.id} product={product} />

@@ -63,7 +63,6 @@ const RadioButton = ({ value: { name, value }, checkedValue, onChange, disabled 
 		<StyledText
 			fontSize="14px"
 			fontWeight="400"
-			color={theme.colors.colorBlack}
 			margin="10px 20px 10px 0"
 		>
 			{name}

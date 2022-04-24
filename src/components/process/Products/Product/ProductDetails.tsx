@@ -6,7 +6,6 @@ import { observer } from "mobx-react";
 import { StyledTag } from "./ProductRow";
 import RadioButtonGroup from "../../../shared/RadioButtonGroup";
 import StyledText from "../../../shared/StyledText";
-import { theme } from "../../../../theme/Theme";
 
 interface Option {
 	name: string,
@@ -30,7 +29,6 @@ const ProductDetails = observer(() => {
 		<StyledText
 			fontSize="16px"
 			fontWeight="500"
-			color={theme.colors.colorBlack}
 			margin="10px 20px"
 		>
 			Product Details
@@ -40,7 +38,6 @@ const ProductDetails = observer(() => {
 			<StyledText
 				fontSize="14px"
 				fontWeight="500"
-				color={theme.colors.colorBlack}
 				margin="40px 0 0 0"
 			>
 				{selectProduct?.productName}
@@ -48,7 +45,6 @@ const ProductDetails = observer(() => {
 			<StyledText
 				fontSize="14px"
 				fontWeight="500"
-				color={theme.colors.colorBlack}
 				margin="10px 0 30px 0"
 			>
 				{selectProduct?.category}
@@ -66,7 +62,6 @@ const ProductDetails = observer(() => {
 			<StyledText
 				fontSize="14px"
 				fontWeight="400"
-				color={theme.colors.colorBlack}
 				margin="0 0 20px 0"
 			>
 				{selectProduct?.description}
