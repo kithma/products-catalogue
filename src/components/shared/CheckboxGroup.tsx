@@ -1,8 +1,7 @@
 import React from "react";
 import FlexContainer from "./FlexContainer";
-import styled from "styled-components";
 import StyledText from "../shared/StyledText";
-import { theme } from "../../theme/Theme";
+import styled, { theme } from "../../theme/Theme";
 
 interface Props {
 	options: string[],

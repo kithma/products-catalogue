@@ -1,7 +1,7 @@
 import { theme } from "../../theme/Theme";
 import FlexContainer from "./FlexContainer";
 import StyledText from "./StyledText";
-import styled from "styled-components";
+import styled from "../../theme/Theme";
 
 interface Props {
 	steps: { name: string, disabled: boolean }[]

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "../../theme/Theme";
 
 interface Props {
 	fontSize: string

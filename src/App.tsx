@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme/Theme";
-import { GlobalStyles } from "./theme/GlobalStyles";
+import GlobalStyles from "./theme/GlobalStyles";
 import Process from "./components/process/Process";
 import FlexContainer from "./components/shared/FlexContainer";
 

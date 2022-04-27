@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { Product } from "../../../../models/ProductModel";
 import FlexContainer from "../../../shared/FlexContainer";
-import styled from "styled-components";
 import { StoreContext } from "../../../../stores/StoreContext";
 import { observer } from "mobx-react";
 import StyledText from "../../../shared/StyledText";
-import { theme } from "../../../../theme/Theme";
+import styled, { theme } from "../../../../theme/Theme";
 
 interface Props {
 	product: Product

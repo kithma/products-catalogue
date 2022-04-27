@@ -1,6 +1,6 @@
 import React from "react";
 import FlexContainer from "./FlexContainer";
-import styled from "styled-components";
+import styled from "../../theme/Theme";
 
 interface Props {
 	onChange: (val: string) => void;

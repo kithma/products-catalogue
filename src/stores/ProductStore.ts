@@ -19,6 +19,7 @@ export class ProductStore {
 		return this._selectedProductId.get()
 	}
 
+	@computed
 	get selectProduct() {
 		return this._products.get(this._selectedProductId.get());
 	}
@@ -41,7 +42,10 @@ export class ProductStore {
 
 	@action
 	loadProducts(categories: Category[], searchTerm: string) {
-		this._products.clear();
+
+		runInAction(() => {
+			this._products.clear();
+		});
 
 		(productsList as Product[]).forEach(product => {
 

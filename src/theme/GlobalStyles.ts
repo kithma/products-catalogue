@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { ThemeProps } from './Theme';
 
-export const GlobalStyles = createGlobalStyle<{ theme: ThemeProps }>`
+export default createGlobalStyle<{ theme: ThemeProps }>`
   body {
     background: ${(props) => props.theme.colors.colorBackground};
 	  font-family: 'Roboto', sans-serif;

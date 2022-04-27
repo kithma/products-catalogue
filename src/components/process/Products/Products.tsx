@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import CheckboxGroup from "../../shared/CheckboxGroup";
 import { Category } from "../../../models/ProductModel";
 import FlexContainer from "../../shared/FlexContainer";
-import styled from "styled-components";
+import styled from "../../../theme/Theme";
 import SearchInput from "../../shared/SearchInput";
 import { StoreContext } from "../../../stores/StoreContext";
 import ProductRow from "./Product/ProductRow";

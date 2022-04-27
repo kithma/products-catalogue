@@ -1,3 +1,4 @@
+import baseStyled, { ThemedStyledInterface } from "styled-components";
 export interface ThemeProps {
 	colors: {
 		colorAqua: string,
@@ -26,3 +27,8 @@ export const theme: ThemeProps = {
 
 	},
 };
+
+export type Theme = typeof theme;
+const styled = baseStyled as ThemedStyledInterface<Theme>;
+
+export default styled;

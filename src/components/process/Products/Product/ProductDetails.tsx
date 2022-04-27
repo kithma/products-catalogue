@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import styled from "styled-components";
+import styled from "../../../../theme/Theme";
 import FlexContainer from "../../../shared/FlexContainer";
 import { StoreContext } from "../../../../stores/StoreContext";
 import { observer } from "mobx-react";
