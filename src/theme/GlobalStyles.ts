@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { ThemeProps } from './Theme';
+import { createGlobalStyle } from "styled-components";
+import { ThemeProps } from "./Theme";
 
 export default createGlobalStyle<{ theme: ThemeProps }>`
   body {
@@ -11,4 +11,4 @@ export default createGlobalStyle<{ theme: ThemeProps }>`
   p {
 	  margin:0;
   }
-`
+`;

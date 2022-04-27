@@ -1,3 +1,8 @@
+## Introduction
+
+This is a sample react project for searching and viewing products, and details of selected product.
+For state management of the project Mobx has been used.
+For styling of the project styled-components has been used.
 ## Available Scripts
 
 In the project directory, you can run:
@@ -19,4 +24,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-

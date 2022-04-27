@@ -6,14 +6,14 @@ import Process from "./components/process/Process";
 import FlexContainer from "./components/shared/FlexContainer";
 
 function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <FlexContainer justifyContent="center">
-        <Process />
-      </FlexContainer>
-      <GlobalStyles />
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <FlexContainer justifyContent="center">
+                <Process />
+            </FlexContainer>
+            <GlobalStyles />
+        </ThemeProvider>
+    );
 }
 
 export default App;
